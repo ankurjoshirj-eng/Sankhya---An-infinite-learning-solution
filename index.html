@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="assets/favicon.jpg"><title>Sankhya – An Infinite Learning Solution</title>
+<meta name="description" content="Sankhya: online coaching and mentorship for regulatory body and banking exams.">
+<meta property="og:title" content="Sankhya – An Infinite Learning Solution">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="w bar">
+<a class="logo" href="#top" aria-label="Sankhya home"><img src="assets/logo-icon.jpg" alt="" width="46" style="border-radius:8px"><span>SANKHYA<small>AN INFINITE LEARNING SOLUTION</small></span></a>
+<nav id="nav" aria-label="Main"><ul><li><a href="#exams">Exams</a></li><li><a href="#courses">Courses</a></li><li><a href="#free">Free Resources</a></li><li><a href="#tests">Mock Tests</a></li><li><a href="#mentor">Mentorship</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+<button class="btn" onclick="openM('Login')">Login</button><button id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+</div></header>
+<main id="top">
+<div class="w hero"><div><h1>Mentorship-led coaching for <em>regulatory body &amp; banking exams</em></h1>
+<p>Courses, previous year papers, current affairs, video lectures, e-books, mock tests and live strategy workshops, with a mentor guiding every step.</p>
+<p><button class="btn" onclick="openM('Free Demo')">Start free</button> <a class="btn o" href="#courses">Explore courses</a></p></div>
+<img src="assets/logo.jpg" alt="Sankhya logo: infinity loop, light bulb and open book" style="width:100%;max-width:360px;justify-self:center;border-radius:24px;border:1px solid var(--line)"></div>
+
+<div class="band"><div class="w sans" style="display:flex;gap:28px;flex-wrap:wrap;padding:18px 20px;justify-content:space-between;font-size:14px">
+<span>Team members <b class="ph">[placeholder]</b></span><span>Learners enrolled <b class="ph">[placeholder]</b></span><span>Workshops &amp; events <b class="ph">[placeholder]</b></span><span>YouTube family <b class="ph">[placeholder]</b></span></div></div>
+
+<section id="exams"><div class="w"><h2>Exam categories</h2><p class="sub">Choose your exam to see its courses, tests and resources.</p><div class="grid" id="eg"></div></div></section>
+
+<section id="courses" class="band"><div class="w"><h2>Courses</h2><p class="sub">Filter by exam family. Prices, ratings and durations are editable placeholders.</p>
+<div class="tabs" role="tablist" id="tabs"></div><div class="grid" id="cg"></div></div></section>
+
+<section id="free"><div class="w"><h2>Free resources</h2><p class="sub">Open study aids for every aspirant.</p><div class="grid" id="rg"></div></div></section>
+
+<section id="tests" class="band"><div class="w"><h2>Mock tests</h2><p class="sub">Frontend demo with mock questions; no test database is connected.</p>
+<div class="card" id="quiz"></div></div></section>
+
+<section id="mentor"><div class="w"><h2>Mentorship &amp; support</h2><p class="sub">Guidance beyond content.</p><div class="grid" id="mg"></div></div></section>
+
+<section id="faq" class="band"><div class="w"><h2>FAQs</h2><div id="fq"></div></div></section>
+</main>
+<footer><div class="w"><div class="fg">
+<div><div class="logo" style="color:var(--fg)">Sankhya</div><p>An Infinite Learning Solution</p><p class="ph">[Address placeholder]<br>[Phone placeholder]<br>[Email placeholder]</p></div>
+<div><h4>Exams</h4><a href="#exams">RBI</a><a href="#exams">SEBI</a><a href="#exams">NABARD</a><a href="#exams">IRDAI</a><a href="#exams">FCI</a><a href="#exams">UPSC</a></div>
+<div><h4>Resources</h4><a href="#free">Previous year papers</a><a href="#free">Current affairs</a><a href="#tests">Mock tests</a><a href="#free">E-books</a></div>
+<div><h4>Company</h4><a href="#mentor">About</a><a href="#mentor">Careers</a><a href="#faq">Contact</a><a href="#top">Privacy policy</a><a href="#top">Terms</a></div>
+</div><p style="margin-top:24px">© Sankhya. Sample build with mock data.</p></div></footer>
+
+<div id="m" role="dialog" aria-modal="true" hidden style="position:fixed;inset:0;background:#0008;display:grid;place-items:center;z-index:20"><div class="card" style="width:min(380px,90vw)"><h3 id="mt"></h3><label class="sans" style="font-size:13px">Email<br><input id="em" style="width:100%;padding:9px;margin:6px 0 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)"></label><button class="btn" onclick="closeM()">Continue</button> <button class="btn o" onclick="closeM()">Close</button><p class="ph">Mock form: not connected to authentication.</p></div></div>
+
+<script src="js/main.js"></script></body></html>
